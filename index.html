@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Autorizaciones</title>
+</head>
+<body>
+  <h2>Formulario de Autorizaciones</h2>
+  <form action="http://localhost:5678/webhook/autorizaciones" method="POST">
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" required><br><br>
+
+    <label for="curso">Curso:</label>
+    <input type="text" id="curso" name="curso" required><br><br>
+
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+    <label for="autorizacion">Autorización:</label>
+    <select id="autorizacion" name="autorizacion" required>
+      <option value="Sí">Sí</option>
+      <option value="No">No</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+>>>>>>> 3fcfc3c (Actualizo index.html con la URL del webhook de producción)
